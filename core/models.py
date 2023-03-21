@@ -19,3 +19,5 @@ class Evento(models.Model):
     def get_data_evento(self):
         return self.data_evento.strftime('%d/%m/%y %H:%M')   # função  altera o formato da data e hora, altera o metodo na agenda.html linha 11
 
+    def get_data_input_evento(self):
+        return self.data_evento.strftime('%Y-%m-%dT%H:%M')
